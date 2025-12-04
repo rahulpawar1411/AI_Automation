@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RP Photoshop Studio - AI Automation</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(to right, #111, #333);
+            color: white;
+        }
+
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .service-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact {
+            padding: 50px 20px;
+            background: #eef2f5;
+        }
+
+        form {
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive AI Widget */
+        elevenlabs-convai {
+            position: fixed !important;
+            bottom: 1px !important;
+            right: 1px !important;
+            z-index: 9999;
+        }
+
+        @media(max-width: 600px) {
+            elevenlabs-convai {
+                bottom: 1px !important;
+                right: 1px !important;
+                transform: scale(0.82) !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>RP Photoshop Studio - AI Automation</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Automate Your Business Using AI + n8n</h2>
+    <p>We build custom AI Agents, automated workflows, Google Sheets integration, Email automation, and Photoshop retouch automation.</p>
+    <button>Start Project</button>
+</section>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="card">
+            <h3>AI Chat Agent</h3>
+            <p>Trained AI assistant with custom knowledge base using n8n + OpenAI.</p>
+        </div>
+
+        <div class="card">
+            <h3>Google Sheets Automation</h3>
+            <p>Auto-save client data, orders, and updates directly to sheets.</p>
+        </div>
+
+        <div class="card">
+            <h3>Google Calendar Booking</h3>
+            <p>Check availability & auto send booking confirmation emails.</p>
+        </div>
+
+        <div class="card">
+            <h3>Email Auto-Reply System</h3>
+            <p>Receive emails & send instant AI-generated responses.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 RP Photoshop Studio – All Rights Reserved
+</footer>
+
+<!-- Original ElevenLabs AI Widget -->
+<elevenlabs-convai agent-id="agent_8401kbn6e0xhffyvjq73ffq6c2rf"></elevenlabs-convai>
+
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async></script>
+
+</body>
+</html>
